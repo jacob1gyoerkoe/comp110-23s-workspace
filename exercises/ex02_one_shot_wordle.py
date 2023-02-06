@@ -10,7 +10,7 @@ guess_index: int = 0
 INDEX: str = ""
 guess: str = input(f"What is your {len(SECRET_WORD)}-letter guess? ")
 while len(guess) != len(SECRET_WORD):
-    guess: str = input(f"That was not {len(SECRET_WORD)} letters! Try again: ")
+    guess = input(f"That was not {len(SECRET_WORD)} letters! Try again: ")
 while guess_index < len(SECRET_WORD):
     if SECRET_WORD[guess_index] == guess[guess_index]:
             INDEX = INDEX + GREEN_BOX  
